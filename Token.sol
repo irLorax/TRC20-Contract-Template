@@ -16,7 +16,7 @@ contract Token is ERC20, ERC20Detailed {
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor () public ERC20Detailed("irLorax", "LRX", 18) {
+    constructor () public ERC20Detailed("irLorax", "irLRX", 18) {
         _mint(msg.sender, 21000000 * (10 ** uint256(decimals())));
     }
 }
